@@ -1,5 +1,5 @@
 {
-  "name": "iTunesControl",
+  "name": "itunescontrol",
   "version": "1.0.0",
   "description": "Search and play tracks from local iTunes library.",
   "main": "index.js",

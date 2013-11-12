@@ -1,4 +1,4 @@
-iTunesControl
+itunescontrol
 =================
 
 Search and play tracks from local iTunes library.
