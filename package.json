@@ -1,0 +1,28 @@
+{
+  "name": "iTunesControl",
+  "version": "1.0.0",
+  "description": "Search and play tracks from local iTunes library.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dkordik/itunescontrol.git"
+  },
+  "keywords": [
+    "itunes",
+    "local",
+    "remote",
+    "search",
+    "play"
+  ],
+  "author": "Dan Kordik",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dkordik/itunescontrol/issues"
+  },
+  "dependencies": {
+    "applescript": "~0.2.1"
+  }
+}
