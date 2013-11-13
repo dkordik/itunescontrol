@@ -8,12 +8,12 @@ var search = function (query, callback) {
 	applescript.execFile(__dirname + "/itunes-search.applescript", [ query ], function (err, raw) {
 		if (err) {
 			console.error(err);
-			process.exit(1);
+			return;
 		}
 
 		if (raw.length == 0) {
 			callback([]);
-			process.exit(0);
+			return;
 		}
 
 		//7 = ----- + {TRACK}
@@ -29,7 +29,6 @@ var search = function (query, callback) {
 		})
 
 		callback(results);
-		process.exit(0);
 	});
 }
 
@@ -37,7 +36,6 @@ var play = function (id) {
 	applescript.execFile(__dirname + "/itunes-play.applescript", [ id ], function (err, stdout) {
 		if (err) {
 			console.error(err);
-			process.exit(1);
 		} else {
 			console.log(stdout);
 		}
