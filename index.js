@@ -11,6 +11,11 @@ var search = function (query, callback) {
 			process.exit(1);
 		}
 
+		if (raw.length == 0) {
+			callback([]);
+			process.exit(0);
+		}
+
 		//7 = ----- + {TRACK}
 		var pipetracks = raw.join("     ").substring(7).split("{TRACK}");
 
@@ -24,6 +29,7 @@ var search = function (query, callback) {
 		})
 
 		callback(results);
+		process.exit(0);
 	});
 }
 
