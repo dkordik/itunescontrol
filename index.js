@@ -11,7 +11,7 @@ var search = function (query, callback) {
 			return;
 		}
 
-		if (raw.length == 0) {
+		if (!raw || raw.length == 0) {
 			callback([]);
 			return;
 		}
