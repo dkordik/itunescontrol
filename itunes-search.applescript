@@ -7,7 +7,7 @@ on run arg
 		set serialized to {}
 		
 		repeat with result in results
-			set serialized to serialized & {"{TRACK}", database ID of result, name of result, artist of result, album artist of result, album of result, year of result, duration of result}
+			set serialized to serialized & {"{TRACK}", database ID of result, name of result, track number of result, artist of result, album artist of result, album of result, year of result, duration of result}
 		end repeat
 		
 		return serialized

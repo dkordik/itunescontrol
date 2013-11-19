@@ -2,6 +2,7 @@
 
 var applescript = require("applescript");
 
+//this should mirror order of fields in itunes-search.applescript
 var FIELDMAP = [ "id", "name", "track number", "artist", "album artist", "album", "year", "duration" ];
 
 var search = function (query, callback) {
