@@ -2,7 +2,7 @@
 
 on run arg
 	tell application "iTunes"
-		set results to (search playlist "Library" for arg)
+		set results to (search first library playlist for arg)
 		
 		set serialized to {}
 		
